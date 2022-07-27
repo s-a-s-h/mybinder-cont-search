@@ -1,0 +1,16 @@
+name: data_tools
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - lxml
+  - pathlib
+  - pandas
+  - panel
+  - pip
+  - pre-commit
+  - requests
+  - pip:
+    - python-dotenv
+    - pytest
+    - pytest-cov
