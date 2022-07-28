@@ -10,6 +10,7 @@ dependencies:
   - pip
   - pre-commit
   - requests
+  - jupyter-panel-proxy
   - pip:
     - python-dotenv
     - pytest
