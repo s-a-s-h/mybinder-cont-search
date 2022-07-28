@@ -11,8 +11,7 @@ class CompanyOSSContributions:
     A class that takes a GitHub organization and returns a csv containing
     information about which open source repos its members contribute to.
     """
-
-    def __init__(self, company, env=Path(Path.home(), ".config/contribution/.github")):
+    def __init__(self, company, env):
         """
         Takes GitHub tokens from the environment and makes auth headers.
         """
@@ -140,7 +139,9 @@ class CompanyOSSContributions:
             name = self.org + ".csv"
         self.df.to_csv(os.path.join(Path.home(), "Downloads", name))
 
-
+'''
 test = CompanyOSSContributions("QuickenLoans", ".github")
 test.get_all_repos()
 test.download_csv()
+'''
+

@@ -56,7 +56,7 @@ class App:
             self.layout[-1] = pn.widgets.DataFrame(self.df)
             self.search_button.loading = False
         except Exception as e:
-            self.layout[1] = pn.pane.Markdown("The requested company cannot be found.")
+            self.layout[1] = pn.pane.Markdown(f"The requested company cannot be found.")
             self.search_button.loading = False
             print(e)
     def download(
@@ -75,5 +75,5 @@ class App:
         except Exception as e:
             self.layout[1] = pn.pane.Markdown("Failed to download data.")
             print(e)
-
-App('.github').layout.show()
+path = os.path.basename(".github")
+App(path).layout.show()
