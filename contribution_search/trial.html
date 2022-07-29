@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - lxml
+        - pathlib
+        - pandas
+        - panel
+        - pip
+        - pre-commit
+        - requests
+        - jupyter-panel-proxy
+        - pip:
+            - python-dotenv
+            - pytest
+            - pytest-cov
+        - paths:
+            - ./contribution_search.py
+  </head>
+    </py-env>
+  <body> <py-script src="./app.py" ></py-script> </py-script> </body>
+</html>
